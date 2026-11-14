@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Source-Aware Evidence Pooling for Dynamic Gaussian Mapping: A Reproducible Mechanism Study"
+message: "If you use this code or data, please cite this repository."
+type: software
+authors:
+  - family-names: "Lee"
+    given-names: "Zipeng"
+    alias: "lemonbaby2"
+    affiliation: "Guangdong University of Technology"
+repository-code: "https://github.com/lemonbaby2/SourceAware-Dynamic-Gaussian-Mapping"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-14"
+keywords:
+  - 3D Gaussian Splatting
+  - dynamic scene mapping
+  - probability calibration
+  - evidence pooling
+  - reproducibility
+abstract: >-
+  Mechanism study on source-aware evidence pooling for dynamic Gaussian mapping.
+  Separates a statistical problem (derived cues reusing the same measurements create
+  confidence without new information) from a mapping problem (dynamic-pixel suppression
+  via static initialization plus a masked rendering loss). Mapping experiments use oracle
+  poses, depth and masks and are mechanism-level evidence, not end-to-end SLAM results.

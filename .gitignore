@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+# LaTeX intermediate (main.bbl is tracked on purpose: arXiv needs it)
+*.aux
+*.log
+*.blg
+*.out
+*.synctex.gz

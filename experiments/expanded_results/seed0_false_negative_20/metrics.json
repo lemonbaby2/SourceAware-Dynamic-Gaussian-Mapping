@@ -1,0 +1,52 @@
+{
+  "seed": 0,
+  "config": "false_negative_20",
+  "agg": {
+    "psnr_all_mean": 20.618,
+    "psnr_static_mean": 31.277,
+    "psnr_dyn_mean": 8.332,
+    "ssim_mean": 0.9067,
+    "ghost_residual_mean": 0.0067
+  },
+  "per_frame": [
+    {
+      "frame": 2,
+      "psnr_all": 21.694,
+      "psnr_static": 29.735,
+      "psnr_dyn": 8.018,
+      "ssim": 0.9158,
+      "ghost_residual": 0.0037,
+      "dyn_ratio": 0.0364
+    },
+    {
+      "frame": 5,
+      "psnr_all": 21.739,
+      "psnr_static": 29.505,
+      "psnr_dyn": 8.828,
+      "ssim": 0.9156,
+      "ghost_residual": 0.0059,
+      "dyn_ratio": 0.043
+    },
+    {
+      "frame": 8,
+      "psnr_all": 20.159,
+      "psnr_static": 33.569,
+      "psnr_dyn": 8.16,
+      "ssim": 0.8997,
+      "ghost_residual": 0.0108,
+      "dyn_ratio": 0.0604
+    },
+    {
+      "frame": 11,
+      "psnr_all": 18.88,
+      "psnr_static": 32.299,
+      "psnr_dyn": 8.324,
+      "ssim": 0.8956,
+      "ghost_residual": 0.0062,
+      "dyn_ratio": 0.0843
+    }
+  ],
+  "train_wall_s": 107.69024519994855,
+  "actual_error_rate": 0.20028082716364565,
+  "peak_allocated_bytes": 3162717696
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "synthetic known-pose mapping; oracle depth; controlled mask perturbations",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "train_ids": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10
+  ],
+  "test_ids": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "iterations": 1200,
+  "points": 2500,
+  "configs": [
+    "loss_only",
+    "false_negative_20",
+    "false_positive_20"
+  ],
+  "source_sha256": "aeda2ea28f354caf4004f03d210ccf69e24c9c64daf41fdc03cf01e494fe5ca0"
+}

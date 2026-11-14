@@ -1,0 +1,873 @@
+{
+  "manifest": {
+    "task": "known-pose synthetic static mapping with oracle depth; no SLAM accuracy measured",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "iterations": 1200,
+    "points": 2500,
+    "train_ids": [
+      0,
+      1,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10
+    ],
+    "test_ids": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "modes": [
+      "naive",
+      "no-dyn-data",
+      "dyn-mask"
+    ],
+    "renderer_sha256": "4fc6b4ef74820b91c50fbc1d8b452e77d7bdcd29fd832c9843842dc50505c83e",
+    "data_sha256": {
+      "_preview_frames.png": "f98fcd03901482810831f97ad9c5b15aad56140763f5e1c68cb79cecd826ed1a",
+      "depth_000.npy": "e9be686243a638bb1db7ca99840f717980c9456f923175fb0d198526bb89df11",
+      "depth_001.npy": "443160b6a187f533ed5dd04832fcd95d067ecd8f9312e01083af8f1b324234c7",
+      "depth_002.npy": "a9b074961e8e765beaa2a33fcabc1e181e4930de7b63968d457f56584a480853",
+      "depth_003.npy": "1d2ef4bf5f8ae07cf052a94f8b492c24205bb4ca2caf418a8498847e51fc7c33",
+      "depth_004.npy": "9b852783674f50f1ca3da2bc6e9a91f60f197fb3dee868655ca32bff0ce0122a",
+      "depth_005.npy": "979d80742a117a8631f9c8975b197a83aa5ec33ff59ab0caeb0f554b658654b8",
+      "depth_006.npy": "d1e3360c142702129d843526bf698d9167997b7769005e9d0b6ae0aa23c6187c",
+      "depth_007.npy": "4f64c9f3d9e3e14636dd344b22103133aa3c55b33fd6496a36e166000a26e218",
+      "depth_008.npy": "ab0326ebd5369a5947ee43ef903b122053ced6d4a306d342d5f637a51d3a5056",
+      "depth_009.npy": "267d1d66b5cb2f7977f673e472d0fcdd52fd6ce136bc5af96f27522a80e70354",
+      "depth_010.npy": "545db97c1629d6fe9845de7d5ca5470c12bacfebc5353ab8efc89510d7462d5e",
+      "depth_011.npy": "d7a3bd67c2ac12dc3e957eac15f599501eb1db442ec820c396624337ef7bcafd",
+      "dynmask_000.npy": "926a2d68ed536648060b81e75c2c3fb98a89f9ad4f53d8771e2bd3745d482f8f",
+      "dynmask_001.npy": "0333c209dacb68a379cfbc4331627a881799eb60658ab208915fc121e3f99286",
+      "dynmask_002.npy": "69f5792f760fc66adaf54041ad7b93d7408bcb4d0000278bc5d9fe66ed12975c",
+      "dynmask_003.npy": "a5138e25abe410071ea231f9bb4d7b717968c62b3332c4a7abc7fd61180cd64f",
+      "dynmask_004.npy": "29f82066e55606bcde53a31ec5161af5fda53493be9690fe9fbecdb74f48ca72",
+      "dynmask_005.npy": "a5f209eb6a174db494dcff68d7c2b161445d4bdeec61b62d32330c843478bd38",
+      "dynmask_006.npy": "a67e058f351323eb5d79ed570b4bfdf4dd36528ee548ab606b20ea9309f1d59a",
+      "dynmask_007.npy": "86385f6eb853baff940b7edd31180d6353b242050eacb8ed90b97c962951f8d5",
+      "dynmask_008.npy": "2ca0e46e35a15971bfea8fe010b5442be0e429ece0bf0313646fc71098f9f4b3",
+      "dynmask_009.npy": "ddbed1e82f0e58faa649b43fcbc60c77f3a7ef3c98edc38c45411fda21855773",
+      "dynmask_010.npy": "672ec20701d539dec5a2f80c838ca332b9f4e97f4e0345de27f9383d4c497977",
+      "dynmask_011.npy": "b4caf26df4f6b364c3fcb297639157a1a2acc39e42521cacd834086360d5e1ae",
+      "gt_clean_000.npy": "80db75cea2db173cb8155c71e19a84b5367b6c19e212a934cfe7e86188cdda98",
+      "gt_clean_001.npy": "316420bdc7a50df47bcd65db00a31bcab4274a71d97a3d846e93c4f2127362a3",
+      "gt_clean_002.npy": "fe8e4e54107e377d024b4511cba835ecb72e99232643d75c0b55351688af1655",
+      "gt_clean_003.npy": "9322d96cb86213c82b268f7bee15f9d58bb9d6e81f59ca8342f43d73c969a1e3",
+      "gt_clean_004.npy": "ad92357998de7644e14c3b5b336f1e4a2a74fefc7f7e69a7e4b3e28def2b35eb",
+      "gt_clean_005.npy": "ad958b5fe1ad397fe89244bb035a95257137903f5427136b426aef985bfc9595",
+      "gt_clean_006.npy": "75b92ded42adbeb24784ea08b9b9dae479d13400b9f401ebd58c0e42e18afe43",
+      "gt_clean_007.npy": "ffaaf9933c272eb750fa69a8ecbec6e49c0bd86eedb105e5b9b0ad80d5226047",
+      "gt_clean_008.npy": "6ed5d0faf45e3efcd69cdb5120bc0bbc55a7a8345cbd2bfefe8592e97cbb7dfe",
+      "gt_clean_009.npy": "a1931543c64ec65db062439eedbd1603ecbe9c5d805477ea9db478ba22d49cb0",
+      "gt_clean_010.npy": "87919f6e4ee01bd1808d912b90025d45bf17cd95544562fa37c159b84b697464",
+      "gt_clean_011.npy": "7916a471d6521039f7c08882af07ee698b607b7c1981c83f5e6947c5d6941220",
+      "meta.json": "2695221ac98dffca2913779d2c56bfa52d7cd19d05f67cd6e24a4bd4e2319a8c",
+      "rgb_000.npy": "a267bccecab251afd710a68b8d13e8e84d8cd36f53c375889f9c2290e5978b57",
+      "rgb_001.npy": "1b9c806832bb0f2cc44d235433f41259cebba4db541cb45fc97a1657c4816db5",
+      "rgb_002.npy": "7fa7ed962546acf7897104d066fbc48190b4ad697e6dff14a806f8406d9a8249",
+      "rgb_003.npy": "5fb662a1648679fd2a655702317f376086470a59ca264487ac73b5288fc42110",
+      "rgb_004.npy": "041197ef93012606bd7b234e46e9f0bbdb8052c78def0023abfd7b3d02fa5d04",
+      "rgb_005.npy": "78ada9503a66d44bfb9f7de6bf1bef2ff05edd2ce256fd49970024a60d1db479",
+      "rgb_006.npy": "e5f2a87adb09b3cf9406115951926f4ecdd197b981c0456f5b0d5471f3bdb92f",
+      "rgb_007.npy": "cee5778820f802c8b6e2154722c14b6ff7f6c75fe2c2ac6812587e6090fed8f7",
+      "rgb_008.npy": "803a24b3da8cfc32620b028154b72f41c7808ca8b66cb50c6ca7490a85a60d96",
+      "rgb_009.npy": "3416aa69d635658ae45cac1b954416f44e47f53fbb6b849c5530cdf05cfa8b39",
+      "rgb_010.npy": "14c8ebfc76f1bbff48e16d34a949a24da54b8353ba816ba596ba62d73d8a4415",
+      "rgb_011.npy": "6f5de16810b242c6c844ca873f8ddbb42654a337424193eb5a57c21e8066ba1c"
+    },
+    "metric_note": "SSIM is the inherited box-window implementation, not claimed identical to other publications"
+  },
+  "stats": {
+    "naive": {
+      "psnr_all_mean": {
+        "mean": 20.926,
+        "std": 0.04596737973824457
+      },
+      "psnr_static_mean": {
+        "mean": 27.899,
+        "std": 0.28055124309116874
+      },
+      "ghost_residual_mean": {
+        "mean": 0.03833333333333333,
+        "std": 0.004518111699961981
+      },
+      "ssim_mean": {
+        "mean": 0.8879666666666667,
+        "std": 0.0031374086972107097
+      },
+      "clean_background_psnr_mean": {
+        "mean": 26.52551358247651,
+        "std": 0.4568061685633343
+      },
+      "train_wall_s": {
+        "mean": 112.18632279996139,
+        "std": 8.13871624119545
+      },
+      "render_ms": {
+        "mean": 25.68609333441903,
+        "std": 0.01733947952875546
+      },
+      "peak_allocated_bytes": {
+        "mean": 3161474560.0,
+        "std": 133021.50202128978
+      }
+    },
+    "no-dyn-data": {
+      "psnr_all_mean": {
+        "mean": 20.897000000000002,
+        "std": 0.1760085225209281
+      },
+      "psnr_static_mean": {
+        "mean": 29.338333333333335,
+        "std": 0.5482794299746563
+      },
+      "ghost_residual_mean": {
+        "mean": 0.027033333333333336,
+        "std": 0.010256867618007622
+      },
+      "ssim_mean": {
+        "mean": 0.8977666666666666,
+        "std": 0.00046188021535171385
+      },
+      "clean_background_psnr_mean": {
+        "mean": 28.493865075972774,
+        "std": 0.7411542999941941
+      },
+      "train_wall_s": {
+        "mean": 107.52036643330939,
+        "std": 0.09004222506245546
+      },
+      "render_ms": {
+        "mean": 25.717409998954583,
+        "std": 0.04714408387591893
+      },
+      "peak_allocated_bytes": {
+        "mean": 3161551360.0,
+        "std": 0.0
+      }
+    },
+    "dyn-mask": {
+      "psnr_all_mean": {
+        "mean": 20.613666666666667,
+        "std": 0.019857828011474708
+      },
+      "psnr_static_mean": {
+        "mean": 31.647333333333336,
+        "std": 0.21736911770841277
+      },
+      "ghost_residual_mean": {
+        "mean": 0.0058,
+        "std": 0.00030000000000000035
+      },
+      "ssim_mean": {
+        "mean": 0.9087999999999999,
+        "std": 0.0006244997998398333
+      },
+      "clean_background_psnr_mean": {
+        "mean": 31.569807694052418,
+        "std": 0.21339839452909323
+      },
+      "train_wall_s": {
+        "mean": 107.60253916669171,
+        "std": 0.01575703237316487
+      },
+      "render_ms": {
+        "mean": 25.737883332961548,
+        "std": 0.0626366443103644
+      },
+      "peak_allocated_bytes": {
+        "mean": 3161628160.0,
+        "std": 0.0
+      }
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "mode": "naive",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.897,
+        "psnr_static_mean": 28.214,
+        "psnr_dyn_mean": 9.084,
+        "ssim_mean": 0.8903,
+        "ghost_residual_mean": 0.0336
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.319,
+          "psnr_static": 27.505,
+          "psnr_dyn": 8.076,
+          "ssim": 0.8978,
+          "ghost_residual": 0.0069,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 27.601415756327363
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.895,
+          "psnr_static": 27.906,
+          "psnr_dyn": 9.417,
+          "ssim": 0.9022,
+          "ghost_residual": 0.0222,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 27.708661860589817
+        },
+        {
+          "frame": 8,
+          "psnr_all": 21.308,
+          "psnr_static": 32.041,
+          "psnr_dyn": 9.478,
+          "ssim": 0.8922,
+          "ghost_residual": 0.0626,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 27.836943206087685
+        },
+        {
+          "frame": 11,
+          "psnr_all": 19.066,
+          "psnr_static": 25.403,
+          "psnr_dyn": 9.365,
+          "ssim": 0.869,
+          "ghost_residual": 0.0429,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 25.022210366976104
+        }
+      ],
+      "clean_background_psnr_mean": 27.04230779749524,
+      "train_wall_s": 121.5841020999942,
+      "render_ms": 25.701945001492277,
+      "peak_allocated_bytes": 3161320960,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 0,
+      "mode": "no-dyn-data",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 21.074,
+        "psnr_static_mean": 29.402,
+        "psnr_dyn_mean": 9.098,
+        "ssim_mean": 0.8983,
+        "ghost_residual_mean": 0.0359
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.535,
+          "psnr_static": 28.501,
+          "psnr_dyn": 8.082,
+          "ssim": 0.9076,
+          "ghost_residual": 0.0068,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 28.596252736430102
+        },
+        {
+          "frame": 5,
+          "psnr_all": 23.257,
+          "psnr_static": 28.769,
+          "psnr_dyn": 10.95,
+          "ssim": 0.9091,
+          "ghost_residual": 0.0868,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 26.074809272465316
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.8,
+          "psnr_static": 32.225,
+          "psnr_dyn": 8.916,
+          "ssim": 0.8919,
+          "ghost_residual": 0.0393,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 29.75228316742777
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.704,
+          "psnr_static": 28.114,
+          "psnr_dyn": 8.444,
+          "ssim": 0.8848,
+          "ghost_residual": 0.0106,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 28.26648024264418
+        }
+      ],
+      "clean_background_psnr_mean": 28.17245635474184,
+      "train_wall_s": 107.62327909993473,
+      "render_ms": 25.712049996946007,
+      "peak_allocated_bytes": 3161551360,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 0,
+      "mode": "dyn-mask",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.591,
+        "psnr_static_mean": 31.4,
+        "psnr_dyn_mean": 8.304,
+        "ssim_mean": 0.9081,
+        "ghost_residual_mean": 0.0061
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.591,
+          "psnr_static": 29.21,
+          "psnr_dyn": 7.995,
+          "ssim": 0.9152,
+          "ghost_residual": 0.0035,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 29.331604954191796
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.788,
+          "psnr_static": 29.883,
+          "psnr_dyn": 8.818,
+          "ssim": 0.9173,
+          "ghost_residual": 0.0056,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 29.95363622566962
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.118,
+          "psnr_static": 33.58,
+          "psnr_dyn": 8.117,
+          "ssim": 0.9003,
+          "ghost_residual": 0.0104,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 33.07144800058315
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.868,
+          "psnr_static": 32.928,
+          "psnr_dyn": 8.287,
+          "ssim": 0.8995,
+          "ghost_residual": 0.005,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 32.95681443881401
+        }
+      ],
+      "clean_background_psnr_mean": 31.328375904814642,
+      "train_wall_s": 107.6165227999445,
+      "render_ms": 25.796059996355325,
+      "peak_allocated_bytes": 3161628160,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 1,
+      "mode": "naive",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.902,
+        "psnr_static_mean": 27.807,
+        "psnr_dyn_mean": 9.206,
+        "ssim_mean": 0.8892,
+        "ghost_residual_mean": 0.0388
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.266,
+          "psnr_static": 27.138,
+          "psnr_dyn": 8.123,
+          "ssim": 0.8946,
+          "ghost_residual": 0.01,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 27.200309905009643
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.64,
+          "psnr_static": 26.987,
+          "psnr_dyn": 9.395,
+          "ssim": 0.8955,
+          "ghost_residual": 0.0235,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 26.798651150426906
+        },
+        {
+          "frame": 8,
+          "psnr_all": 21.611,
+          "psnr_static": 32.051,
+          "psnr_dyn": 9.808,
+          "ssim": 0.892,
+          "ghost_residual": 0.074,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 27.02092350680673
+        },
+        {
+          "frame": 11,
+          "psnr_all": 19.09,
+          "psnr_static": 25.052,
+          "psnr_dyn": 9.497,
+          "ssim": 0.8747,
+          "ghost_residual": 0.0478,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 24.41441583856563
+        }
+      ],
+      "clean_background_psnr_mean": 26.358575100202227,
+      "train_wall_s": 107.48423539998475,
+      "render_ms": 25.688760000048205,
+      "peak_allocated_bytes": 3161551360,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 1,
+      "mode": "no-dyn-data",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.722,
+        "psnr_static_mean": 29.852,
+        "psnr_dyn_mean": 8.571,
+        "ssim_mean": 0.8975,
+        "ghost_residual_mean": 0.0158
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.607,
+          "psnr_static": 29.095,
+          "psnr_dyn": 8.038,
+          "ssim": 0.9106,
+          "ghost_residual": 0.0055,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 29.19169027977377
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.936,
+          "psnr_static": 29.433,
+          "psnr_dyn": 9.078,
+          "ssim": 0.9117,
+          "ghost_residual": 0.015,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 29.4399017731183
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.64,
+          "psnr_static": 33.009,
+          "psnr_dyn": 8.694,
+          "ssim": 0.8962,
+          "ghost_residual": 0.0312,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 30.657171667518433
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.705,
+          "psnr_static": 27.871,
+          "psnr_dyn": 8.475,
+          "ssim": 0.8717,
+          "ghost_residual": 0.0113,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 28.07711522506114
+        }
+      ],
+      "clean_background_psnr_mean": 29.341469736367912,
+      "train_wall_s": 107.48172959999647,
+      "render_ms": 25.673174997791648,
+      "peak_allocated_bytes": 3161551360,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 1,
+      "mode": "dyn-mask",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.622,
+        "psnr_static_mean": 31.734,
+        "psnr_dyn_mean": 8.304,
+        "ssim_mean": 0.909,
+        "ghost_residual_mean": 0.0055
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.657,
+          "psnr_static": 29.632,
+          "psnr_dyn": 7.993,
+          "ssim": 0.9169,
+          "ghost_residual": 0.0037,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 29.744940295128007
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.836,
+          "psnr_static": 30.159,
+          "psnr_dyn": 8.826,
+          "ssim": 0.9181,
+          "ghost_residual": 0.0049,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 30.23889909718114
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.093,
+          "psnr_static": 33.267,
+          "psnr_dyn": 8.106,
+          "ssim": 0.8995,
+          "ghost_residual": 0.0083,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 32.97560137849306
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.904,
+          "psnr_static": 33.877,
+          "psnr_dyn": 8.292,
+          "ssim": 0.9015,
+          "ghost_residual": 0.0053,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 33.63191902280393
+        }
+      ],
+      "clean_background_psnr_mean": 31.647839948401536,
+      "train_wall_s": 107.60562840010971,
+      "render_ms": 25.746009999420494,
+      "peak_allocated_bytes": 3161628160,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 2,
+      "mode": "naive",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.979,
+        "psnr_static_mean": 27.676,
+        "psnr_dyn_mean": 9.333,
+        "ssim_mean": 0.8844,
+        "ghost_residual_mean": 0.0426
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.228,
+          "psnr_static": 27.132,
+          "psnr_dyn": 8.074,
+          "ssim": 0.8958,
+          "ghost_residual": 0.0067,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 27.245802385893047
+        },
+        {
+          "frame": 5,
+          "psnr_all": 22.013,
+          "psnr_static": 27.079,
+          "psnr_dyn": 9.882,
+          "ssim": 0.8955,
+          "ghost_residual": 0.042,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 26.349919816189633
+        },
+        {
+          "frame": 8,
+          "psnr_all": 21.79,
+          "psnr_static": 31.855,
+          "psnr_dyn": 10.023,
+          "ssim": 0.893,
+          "ghost_residual": 0.0785,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 26.888523742664667
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.883,
+          "psnr_static": 24.638,
+          "psnr_dyn": 9.354,
+          "ssim": 0.8534,
+          "ghost_residual": 0.0431,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 24.218385454180854
+        }
+      ],
+      "clean_background_psnr_mean": 26.175657849732055,
+      "train_wall_s": 107.49063089990523,
+      "render_ms": 25.667575001716614,
+      "peak_allocated_bytes": 3161551360,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 2,
+      "mode": "no-dyn-data",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.895,
+        "psnr_static_mean": 28.761,
+        "psnr_dyn_mean": 8.918,
+        "ssim_mean": 0.8975,
+        "ghost_residual_mean": 0.0294
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.547,
+          "psnr_static": 28.649,
+          "psnr_dyn": 8.062,
+          "ssim": 0.9078,
+          "ghost_residual": 0.0061,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 28.743453807960194
+        },
+        {
+          "frame": 5,
+          "psnr_all": 22.663,
+          "psnr_static": 28.961,
+          "psnr_dyn": 10.098,
+          "ssim": 0.9101,
+          "ghost_residual": 0.0558,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 27.378258908950485
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.762,
+          "psnr_static": 29.609,
+          "psnr_dyn": 9.142,
+          "ssim": 0.888,
+          "ghost_residual": 0.0477,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 27.757917341553245
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.608,
+          "psnr_static": 27.826,
+          "psnr_dyn": 8.372,
+          "ssim": 0.884,
+          "ghost_residual": 0.0078,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 27.991046488770323
+        }
+      ],
+      "clean_background_psnr_mean": 27.967669136808563,
+      "train_wall_s": 107.45609059999697,
+      "render_ms": 25.767005002126098,
+      "peak_allocated_bytes": 3161551360,
+      "iterations": 1200,
+      "points": 2500
+    },
+    {
+      "seed": 2,
+      "mode": "dyn-mask",
+      "test_ids": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "train_ids": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "agg": {
+        "psnr_all_mean": 20.628,
+        "psnr_static_mean": 31.808,
+        "psnr_dyn_mean": 8.311,
+        "ssim_mean": 0.9093,
+        "ghost_residual_mean": 0.0058
+      },
+      "per_frame": [
+        {
+          "frame": 2,
+          "psnr_all": 21.615,
+          "psnr_static": 29.374,
+          "psnr_dyn": 7.992,
+          "ssim": 0.9157,
+          "ghost_residual": 0.0034,
+          "dyn_ratio": 0.0364,
+          "clean_background_psnr": 29.497591802227134
+        },
+        {
+          "frame": 5,
+          "psnr_all": 21.844,
+          "psnr_static": 30.263,
+          "psnr_dyn": 8.819,
+          "ssim": 0.9196,
+          "ghost_residual": 0.0053,
+          "dyn_ratio": 0.043,
+          "clean_background_psnr": 30.320670017616603
+        },
+        {
+          "frame": 8,
+          "psnr_all": 20.145,
+          "psnr_static": 34.1,
+          "psnr_dyn": 8.124,
+          "ssim": 0.9011,
+          "ghost_residual": 0.0096,
+          "dyn_ratio": 0.0604,
+          "clean_background_psnr": 33.53485501294567
+        },
+        {
+          "frame": 11,
+          "psnr_all": 18.909,
+          "psnr_static": 33.496,
+          "psnr_dyn": 8.309,
+          "ssim": 0.901,
+          "ghost_residual": 0.0048,
+          "dyn_ratio": 0.0843,
+          "clean_background_psnr": 33.579712082974886
+        }
+      ],
+      "clean_background_psnr_mean": 31.733207228941076,
+      "train_wall_s": 107.58546630002093,
+      "render_ms": 25.67158000310883,
+      "peak_allocated_bytes": 3161628160,
+      "iterations": 1200,
+      "points": 2500
+    }
+  ]
+}

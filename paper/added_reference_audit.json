@@ -1,0 +1,274 @@
+[
+  {
+    "key": "cadena2016",
+    "title": "Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception Age",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2016,
+    "doi": "10.1109/tro.2016.2624754",
+    "source": "https://api.crossref.org/works/10.1109/tro.2016.2624754"
+  },
+  {
+    "key": "orb2015",
+    "title": "ORB-SLAM: A Versatile and Accurate Monocular SLAM System",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2015,
+    "doi": "10.1109/tro.2015.2463671",
+    "source": "https://api.crossref.org/works/10.1109/tro.2015.2463671"
+  },
+  {
+    "key": "monoslam2007",
+    "title": "MonoSLAM: Real-Time Single Camera SLAM",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2007,
+    "doi": "10.1109/tpami.2007.1049",
+    "source": "https://api.crossref.org/works/10.1109/tpami.2007.1049"
+  },
+  {
+    "key": "inverse2008",
+    "title": "Inverse Depth Parametrization for Monocular SLAM",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2008,
+    "doi": "10.1109/tro.2008.2003276",
+    "source": "https://api.crossref.org/works/10.1109/tro.2008.2003276"
+  },
+  {
+    "key": "dso2018",
+    "title": "Direct Sparse Odometry",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2018,
+    "doi": "10.1109/tpami.2017.2658577",
+    "source": "https://api.crossref.org/works/10.1109/tpami.2017.2658577"
+  },
+  {
+    "key": "vins2018",
+    "title": "VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2018,
+    "doi": "10.1109/tro.2018.2853729",
+    "source": "https://api.crossref.org/works/10.1109/tro.2018.2853729"
+  },
+  {
+    "key": "svo2017",
+    "title": "SVO: Semidirect Visual Odometry for Monocular and Multicamera Systems",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2017,
+    "doi": "10.1109/tro.2016.2623335",
+    "source": "https://api.crossref.org/works/10.1109/tro.2016.2623335"
+  },
+  {
+    "key": "isam2012",
+    "title": "iSAM2: Incremental smoothing and mapping using the Bayes tree",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2012,
+    "doi": "10.1177/0278364911430419",
+    "source": "https://api.crossref.org/works/10.1177/0278364911430419"
+  },
+  {
+    "key": "dynamicslam2007",
+    "title": "Simultaneous Localization, Mapping and Moving Object Tracking",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2007,
+    "doi": "10.1177/0278364907081229",
+    "source": "https://api.crossref.org/works/10.1177/0278364907081229"
+  },
+  {
+    "key": "dynosam2024",
+    "title": "DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2026,
+    "doi": "10.1109/tro.2025.3641813",
+    "source": "https://api.crossref.org/works/10.1109/tro.2025.3641813"
+  },
+  {
+    "key": "kimera2022",
+    "title": "Kimera: From SLAM to spatial perception with 3D dynamic scene graphs",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2021,
+    "doi": "10.1177/02783649211056674",
+    "source": "https://api.crossref.org/works/10.1177/02783649211056674"
+  },
+  {
+    "key": "doublefusion2018",
+    "title": "DoubleFusion: Real-Time Capture of Human Performances with Inner Body Shapes from a Single Depth Sensor",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2020,
+    "doi": "10.1109/tpami.2019.2928296",
+    "source": "https://api.crossref.org/works/10.1109/tpami.2019.2928296"
+  },
+  {
+    "key": "elastic2016",
+    "title": "ElasticFusion: Real-time dense SLAM and light source estimation",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2016,
+    "doi": "10.1177/0278364916669237",
+    "source": "https://api.crossref.org/works/10.1177/0278364916669237"
+  },
+  {
+    "key": "dense2018",
+    "title": "Real-time large-scale dense RGB-D SLAM with volumetric fusion",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2015,
+    "doi": "10.1177/0278364914551008",
+    "source": "https://api.crossref.org/works/10.1177/0278364914551008"
+  },
+  {
+    "key": "rgbd2013",
+    "title": "3-D Mapping With an RGB-D Camera",
+    "venue": "IEEE Transactions on Robotics",
+    "year": 2014,
+    "doi": "10.1109/tro.2013.2279412",
+    "source": "https://api.crossref.org/works/10.1109/tro.2013.2279412"
+  },
+  {
+    "key": "sdf2013",
+    "title": "Real-time 3D reconstruction at scale using voxel hashing",
+    "venue": "ACM Transactions on Graphics",
+    "year": 2013,
+    "doi": "10.1145/2508363.2508374",
+    "source": "https://api.crossref.org/works/10.1145/2508363.2508374"
+  },
+  {
+    "key": "nerfsurvey2022",
+    "title": "State of the Art on Neural Rendering",
+    "venue": "Computer Graphics Forum",
+    "year": 2020,
+    "doi": "10.1111/cgf.14022",
+    "source": "https://api.crossref.org/works/10.1111/cgf.14022"
+  },
+  {
+    "key": "neuralrender2022",
+    "title": "Advances in Neural Rendering",
+    "venue": "Computer Graphics Forum",
+    "year": 2022,
+    "doi": "10.1111/cgf.14507",
+    "source": "https://api.crossref.org/works/10.1111/cgf.14507"
+  },
+  {
+    "key": "instant2022",
+    "title": "Instant neural graphics primitives with a multiresolution hash encoding",
+    "venue": "ACM Transactions on Graphics",
+    "year": 2022,
+    "doi": "10.1145/3528223.3530127",
+    "source": "https://api.crossref.org/works/10.1145/3528223.3530127"
+  },
+  {
+    "key": "ewasplat2002",
+    "title": "EWA splatting",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "year": 2002,
+    "doi": "10.1109/tvcg.2002.1021576",
+    "source": "https://api.crossref.org/works/10.1109/tvcg.2002.1021576"
+  },
+  {
+    "key": "sift2004",
+    "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+    "venue": "International Journal of Computer Vision",
+    "year": 2004,
+    "doi": "10.1023/b:visi.0000029664.99615.94",
+    "source": "https://api.crossref.org/works/10.1023/b:visi.0000029664.99615.94"
+  },
+  {
+    "key": "flow2014",
+    "title": "A Database and Evaluation Methodology for Optical Flow",
+    "venue": "International Journal of Computer Vision",
+    "year": 2011,
+    "doi": "10.1007/s11263-010-0390-2",
+    "source": "https://api.crossref.org/works/10.1007/s11263-010-0390-2"
+  },
+  {
+    "key": "flow2010",
+    "title": "Large Displacement Optical Flow: Descriptor Matching in Variational Motion Estimation",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2011,
+    "doi": "10.1109/tpami.2010.143",
+    "source": "https://api.crossref.org/works/10.1109/tpami.2010.143"
+  },
+  {
+    "key": "sceneflow2019",
+    "title": "3D Scene Flow Estimation with a Piecewise Rigid Scene Model",
+    "venue": "International Journal of Computer Vision",
+    "year": 2015,
+    "doi": "10.1007/s11263-015-0806-0",
+    "source": "https://api.crossref.org/works/10.1007/s11263-015-0806-0"
+  },
+  {
+    "key": "deepflow2015",
+    "title": "DeepMatching: Hierarchical Deformable Dense Matching",
+    "venue": "International Journal of Computer Vision",
+    "year": 2016,
+    "doi": "10.1007/s11263-016-0908-3",
+    "source": "https://api.crossref.org/works/10.1007/s11263-016-0908-3"
+  },
+  {
+    "key": "pwc2020",
+    "title": "Models Matter, So Does Training: An Empirical Study of CNNs for Optical Flow Estimation",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2020,
+    "doi": "10.1109/tpami.2019.2894353",
+    "source": "https://api.crossref.org/works/10.1109/tpami.2019.2894353"
+  },
+  {
+    "key": "proper2007journal",
+    "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "venue": "Journal of the American Statistical Association",
+    "year": 2007,
+    "doi": "10.1198/016214506000001437",
+    "source": "https://api.crossref.org/works/10.1198/016214506000001437"
+  },
+  {
+    "key": "forecast2007journal",
+    "title": "Probabilistic Forecasts, Calibration and Sharpness",
+    "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+    "year": 2007,
+    "doi": "10.1111/j.1467-9868.2007.00587.x",
+    "source": "https://api.crossref.org/works/10.1111/j.1467-9868.2007.00587.x"
+  },
+  {
+    "key": "pool2013",
+    "title": "Combining predictive distributions",
+    "venue": "Electronic Journal of Statistics",
+    "year": 2013,
+    "doi": "10.1214/13-ejs823",
+    "source": "https://api.crossref.org/works/10.1214/13-ejs823"
+  },
+  {
+    "key": "uncertainty2021",
+    "title": "A review of uncertainty quantification in deep learning: Techniques, applications and challenges",
+    "venue": "Information Fusion",
+    "year": 2021,
+    "doi": "10.1016/j.inffus.2021.05.008",
+    "source": "https://api.crossref.org/works/10.1016/j.inffus.2021.05.008"
+  },
+  {
+    "key": "robust1964journal",
+    "title": "Robust Estimation of a Location Parameter",
+    "venue": "The Annals of Mathematical Statistics",
+    "year": 1964,
+    "doi": "10.1214/aoms/1177703732",
+    "source": "https://api.crossref.org/works/10.1214/aoms/1177703732"
+  },
+  {
+    "key": "ransac1981journal",
+    "title": "Random sample consensus",
+    "venue": "Communications of the ACM",
+    "year": 1981,
+    "doi": "10.1145/358669.358692",
+    "source": "https://api.crossref.org/works/10.1145/358669.358692"
+  },
+  {
+    "key": "eu2016",
+    "title": "The EuRoC micro aerial vehicle datasets",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2016,
+    "doi": "10.1177/0278364915620033",
+    "source": "https://api.crossref.org/works/10.1177/0278364915620033"
+  },
+  {
+    "key": "kitti2013",
+    "title": "Vision meets robotics: The KITTI dataset",
+    "venue": "The International Journal of Robotics Research",
+    "year": 2013,
+    "doi": "10.1177/0278364913491297",
+    "source": "https://api.crossref.org/works/10.1177/0278364913491297"
+  }
+]
